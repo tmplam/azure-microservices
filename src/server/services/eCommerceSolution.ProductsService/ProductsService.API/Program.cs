@@ -6,7 +6,7 @@ using ProductsService.API.Middlewares;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
-    .AddDataAccess()
+    .AddDataAccess(builder.Configuration)
     .AddBusinessLogic();
 
 builder.Services.AddControllers();
