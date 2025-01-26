@@ -14,7 +14,7 @@ builder.Services
 
 builder.Services
     .AddControllers()
-    .AddJsonOptions(config =>   
+    .AddJsonOptions(config =>
     {
         config.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
