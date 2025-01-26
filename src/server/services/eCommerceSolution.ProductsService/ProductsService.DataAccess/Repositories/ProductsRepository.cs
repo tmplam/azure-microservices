@@ -40,7 +40,7 @@ public class ProductsRepository(
 
     public async Task<IEnumerable<Product>> GetProductsByConditionAsync(Expression<Func<Product, bool>> expression)
     {
-        return await _dbContext.Products.Where(expression).ToListAsync();
+        return (await _dbContext.Products.AsQueryable().ToListAsync()).AsQueryable().Where(expression);
     }
 
     public async Task<Product?> UpdateProductAsync(Product product)

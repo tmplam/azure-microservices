@@ -1,7 +1,6 @@
 ﻿using ProductsService.BusinessLogic.Dtos;
 using ProductsService.DataAccess.Entities;
 using System.Linq.Expressions;
-using System.Threading.Tasks;
 
 namespace ProductsService.BusinessLogic.ServiceContracts;
 

@@ -1,4 +1,4 @@
-﻿namespace ProductsService.BusinessLogic.Dtos;;
+﻿namespace ProductsService.BusinessLogic.Dtos;
 
 public enum CategoryOptions
 {
